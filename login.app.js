@@ -186,7 +186,7 @@ function login(){
 
 
 function loginSubmit(){
-    window.location.replace("http://127.0.0.1:5500/RockPaperScissors.html");
+    window.location.replace("https://nfrimel.github.io/RockPaperScissors.html");
     
        
 }
