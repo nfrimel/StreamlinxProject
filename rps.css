@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #2b2d42;
+}
+
+header{
+    background:white;
+    padding: 20px;
+
+}
+
+header > h1 {
+    color: #2b2d42;
+    text-align: center;
+    font-family: 'Press Start 2P', san-serif;
+}
+
+.score-board{
+    margin: 20px auto;
+    border: 3px solid white;
+    border-radius: 4px;
+    text-align: center;
+    width: 350px;
+    color: white;
+    font-size: 36px;
+    padding: 15px 20px;
+    font-family: 'press start 2p',sans-serif;
+    position: relative;
+}
+.total-rounds{
+    margin: 40px auto;
+    text-align: center;
+    width: 200px;
+    color: white;
+    padding: 15px 20px;
+    font-family: 'press start 2p',sans-serif;
+    position: relative;
+}
+
+
+#user-label{
+    background: #8d99ae;
+    color: white;
+    font-size: 14px;
+    padding: 2px 10px;
+    font-family:  'press start 2p', sans-serif;
+    position: absolute;
+    top: 25px;
+    left: -35px;
+}
+
+#computer-label{
+    background: #8d99ae;
+    color: white;
+    font-size: 14px;
+    padding: 2px 10px;
+    font-family:  'press start 2p', sans-serif;
+    position: absolute;
+    top: 25px;
+    right: -45px;  
+}
+
+#total-label{
+    color: white;
+    font-size: 14px;
+    padding: 2px 10px;
+    font-family:  'press start 2p', sans-serif;
+    position: absolute;
+    top: 30px;
+    left: -30px;
+   
+}
+#totalNumber-label{
+    background: #8d99ae;
+    color: white;
+    font-size: 14px;
+    padding: 2px 10px;
+    font-family:  'press start 2p', sans-serif;
+    position: absolute;
+    top: 30px;
+    right: -30px;
+   
+}
+#rockLeft{
+    width: 75px;
+    height: 75px;
+    left: -20px;
+    position: relative;
+}
+#rockRight{
+    width: 75px;
+    height: 75px;
+    position: relative;
+}
+
+
+
+.result{
+    font-size: 30px;
+    color: white;
+    padding-top: 20px;
+}
+.result > p {
+    text-align: center;
+    font-weight: bold;
+    font-family: 'press start 2p', sans-serif;
+    
+}
+
+.choices{
+    margin: 50px 0px;
+    text-align: center;
+
+}
+.choice{
+    border: 4px solid white;
+    border-radius: 50%;
+    padding: 40px;
+    margin: 0 20px;
+    display: inline-block;
+    transition: all 0.3s ease;
+    object-fit: contain;
+}
+
+.choicesAnimationRock{
+    margin: 0px 0px;
+    text-align: center;
+    display: none;
+    position: relative;
+}
+.final{
+    margin: 0px 0px;
+    text-align: center;
+    display: none;
+    position: relative;
+}
+.choiceAnimationRock{
+    padding: 0px;
+    margin: 0 50px ;
+    display: inline-block ;
+    transition: all 0.3s ease ;
+    object-fit: contain ;
+}
+.finalChoiceUser{
+    padding: 0px;
+    margin: 0 0px ;
+    display: inline-block ;
+    transition: all 0.3s ease ;
+    object-fit: contain ;
+}
+
+.choicesAnimationPalm{
+    margin: 0px 0px;
+    text-align: center;
+    display: none;
+}
+.choiceAnimationPalm{
+    padding: 0px;
+    margin: 0 0px ;
+    display: inline-block;
+    transition: all 0.3s ease ;
+    object-fit: contain ;
+}
+.finalChoiceComputer{
+    padding: 0px;
+    margin: 0 0px ;
+    display: inline-block;
+    transition: all 0.3s ease ;
+    object-fit: contain ;
+}
+
+.choice:hover{
+    cursor: pointer;
+    background:#8d99ae ;
+}
+
+.card_image{
+    width: 40px;
+    padding: .4rem;
+    display: flex;
+    flex: 1 1 auto;
+}
+
+.animationRock{
+    width: 100px;
+    padding: .4rem;
+    display: flex;
+    flex: 1 1 auto;
+}
+.animationPalm{
+    width: 125px;
+    padding: .4rem;
+    display: flex;
+    flex: 1 1 auto;
+}
+.finalUser{
+    width: 125px;
+    padding: .4rem;
+    display: flex;
+    flex: 1 1 auto;
+}
+.finalComputer{
+    width: 125px;
+    padding: .4rem;
+    display: flex;
+    flex: 1 1 auto;
+}
+
+
+
+.green-glow{
+    background: green !important ;
+}
+
+.red-glow{
+    background: red !important;
+}
+
+.gray-glow{
+    background: #edf2f4 !important;
+    color: #d90429 !important;
+}
+.hide-choices{
+    display: none !important;
+}
+.show-animation{
+   
+   display: block !important;   
+}
+.final-choice{
+    display: block !important;
+    
+}
+
+@keyframes move-left-rock {
+    0% { left: -20px; top: 0px;}
+    50% { left: 10px; top: 40px}
+    100% { left: -20px; top: 0px;}
+}
+.left-rock-move {
+    animation-name: move-left-rock;
+    animation-duration: 1s;
+    animation-iteration-count: 4;
+}
+
+@keyframes move-right-rock {
+    0% { right:  0px; top: 0px;}
+    50% { right: 30px; top: 40px}
+    100% { right: 0px; top: 0px;}
+}
+.right-rock-move {
+    animation-name: move-right-rock;
+    animation-duration: 1s;
+    animation-iteration-count: 4;
+}
+
+

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>ROCK PAPER SCISSORS</title>
+    <link rel="stylesheet" href="rps.css">
+</head>
+<body>
+    <header>
+        <h1>ROCK PAPER SCISSORS</h1>
+    </header>
+
+    <div class="total-rounds">
+        <div id="total-label">Total Rounds </div>
+        <div id="totalNumber-label">0</div>
+    </div>
+    <div class="score-board">
+        <div id="user-label" class="badge">user</div>
+        <div id="computer-label" class="badge">comp</div>
+        <span id="user-score">0</span> : <span id="computer-score">0</span>
+    </div>
+
+    <div class="result">
+        <p>SELECT ROCK, PAPER, OR SCISSORS</p>
+    </div>
+
+    <div class="choices" id="choices">
+        <div  class="choice" id="rock">
+            <img src="Images/rock.png" class="card_image" alt="">
+        </div>
+        <div  class="choice" id="paper">
+            <img src="Images/paper.png" class="card_image" alt="">
+        </div>
+        <div  class="choice" id="scissors">
+            <img src="Images/scissors.png" class="card_image" alt="">
+        </div>
+    </div>
+    <div class="choicesAnimationRock" id="choicesAnimationRock">
+        <div  class="choiceAnimationRock" id="rockLeft">
+            <img src="Images/rockLeft.png" class="animationRock"  alt="">
+        </div>
+        <div  class="choiceAnimationRock" id="rockRight">
+            <img src="Images/rockRight.png" class="animationRock"  alt="">
+        </div>
+        
+    </div>
+    <div class="choicesAnimationPalm" id="choicesAnimationPalm">
+       
+        <div  class="choiceAnimationPalm" id="palmLeft">
+            <img src="Images/palmLeft.png" class="animationPalm" " alt="">
+        </div>
+        <div  class="choiceAnimationPalm" id="palmright">
+            <img src="Images/palmRight.png" class="animationPalm"  alt="">
+        </div>
+    </div>
+
+    <div class="final" id="final">
+        <div  class="finalChoiceUser" id="finalChoiceUser">    
+            
+        </div>
+        <div  class="finalChoiceComputer" id="finalChoiceComputer">
+            
+        </div>
+        
+    </div>
+
+    
+    <script src="rps.app.js" charset="utf-8"></script>
+    
+</body>
+</html>
